@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+    <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".QuestionView">
+
+        <TextView android:text="Question:" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/questionText" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/submitAnswer" android:text="Submit" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/answer_group">
+            <RadioButton
+                    android:layout_width="wrap_content" android:onClick="onRadioButtonClicked"
+                    android:layout_height="wrap_content" android:id="@+id/answer1" android:layout_weight="1"/>
+            <RadioButton
+                    android:layout_width="wrap_content" android:onClick="onRadioButtonClicked"
+                    android:layout_height="wrap_content" android:id="@+id/answer2" android:layout_weight="1"/>
+            <RadioButton
+                    android:layout_width="wrap_content" android:onClick="onRadioButtonClicked"
+                    android:layout_height="wrap_content" android:id="@+id/answer3" android:layout_weight="1"/>
+            <RadioButton
+                    android:layout_width="wrap_content" android:onClick="onRadioButtonClicked"
+                    android:layout_height="wrap_content" android:id="@+id/answer4" android:layout_weight="1"/>
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
